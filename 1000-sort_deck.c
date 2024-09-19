@@ -65,7 +65,7 @@ b->next = a;
 */
 void sort_deck(deck_node_t **deck)
 {
-deck_node_t *node, *temp;
+deck_node_t *node;
 int sorted = 0;
 
 if (!deck || !*deck)
