@@ -22,11 +22,21 @@ struct listint_s *next;
 /* Prototypes for sorting algorithms */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
-
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-void shell_sort(int *array, size_t size); /* Added Shell Sort prototype */
+
+/**
+* shell_sort - Sort an array of integers in ascending order
+*              using the Shell sort algorithm and Knuth sequence.
+* @array: Array of integers.
+* @size: Size of the array.
+*
+* Description: Sorts the array using the Shell sort algorithm
+*              with a Knuth sequence. Prints the array each
+*              time the interval decreases.
+*/
+void shell_sort(int *array, size_t size);
 
 #endif /* SORT_H */
