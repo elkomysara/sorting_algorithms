@@ -4,7 +4,7 @@
 /**
 * card_value - Convert a card's value to an integer for comparison
 * @value: The value string of the card (e.g., "Ace", "King", "2", etc.)
-* 
+*
 * Return: The integer representation of the card value.
 */
 int card_value(const char *value)
