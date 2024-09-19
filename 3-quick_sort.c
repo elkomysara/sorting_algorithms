@@ -34,8 +34,8 @@ if (array[j] <= pivot)
 i++;
 if (i != j)
 {
-    swap(&array[i], &array[j]);
-    print_array(array, size);
+swap(&array[i], &array[j]);
+print_array(array, size);
 }
 }
 }
