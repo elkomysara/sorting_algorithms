@@ -8,8 +8,10 @@
 */
 void swap_nodes(listint_t **list, listint_t *left, listint_t *right)
 {
-if (!left || !right) {
-return;  // Prevent null pointer dereference
+if (left == NULL || right == NULL)
+{
+/* Prevent null pointer dereference */
+return;
 }
 
 if (left->prev)
