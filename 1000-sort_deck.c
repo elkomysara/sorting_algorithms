@@ -4,7 +4,7 @@
 /**
 * card_value - Convert a card's value to an integer for comparison
 * @value: The value string of the card (e.g., "Ace", "King", "2", etc.)
-*
+* 
 * Return: The integer representation of the card value.
 */
 int card_value(const char *value)
@@ -40,8 +40,9 @@ return (0);
 
 /**
 * swap_nodes - Swap two nodes in the doubly linked list
-* @a: The first node
-* @b: The second node
+* @deck: The deck of cards
+* @a: The first node to swap
+* @b: The second node to swap
 */
 void swap_nodes(deck_node_t **deck, deck_node_t *a, deck_node_t *b)
 {
@@ -61,7 +62,7 @@ b->next = a;
 
 /**
 * sort_deck - Sort a deck of cards
-* @deck: The deck to sort
+* @deck: The deck to sort (a doubly linked list of cards)
 */
 void sort_deck(deck_node_t **deck)
 {
